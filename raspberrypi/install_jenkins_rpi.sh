@@ -1,5 +1,11 @@
 #! /bin/bash
 
+# Update our Debian apt package repository to include the NodeSource packages
+curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
+
+# Install Node.js
+sudo apt install -y nodejs
+
 # Install JDK 11
 sudo apt install default-jdk
 
